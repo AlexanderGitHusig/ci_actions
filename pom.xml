@@ -104,7 +104,7 @@
                 <version>2.2</version>
                 <configuration>          
                     <server>TomcatServer</server>
-                    <url>${remote.server}</url>
+                    <url>${http://164.92.142.32/}</url>
                     <username>${remote.user}</username>
                     <password>${remote.password}</password>
                     <update>true</update>    
@@ -178,6 +178,11 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
             </plugin>
         </plugins>
     </build>
